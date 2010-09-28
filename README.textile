@@ -12,9 +12,9 @@ Creates an animated div with a class of animation inside of the specified contai
 
 h2. Example
 
-$(function(){
+@@$(function(){
   $("#container").animatePNG("/images/animation.png", 100, 100, 8, {fps: 20, horizontal: false});
-});
+});@@
 
 h2. Parameters
 
@@ -26,5 +26,5 @@ h2. Parameters
 
 h3. Options
 
-*fps* ( _integer_ ): number of frames per second (approximately) to show. affects the speed of the animation.
-*horizontal* ( _boolean_ ): true if your animation sprites go left to right, false if your animation sprites go top to bottom.
+*fps* _integer_ : number of frames per second (approximately) to show. affects the speed of the animation.
+*horizontal* _boolean_ : true if your animation sprites go left to right, false if your animation sprites go top to bottom.
