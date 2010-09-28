@@ -18,13 +18,13 @@ $(function(){
 
 h2. Parameters
 
-*imageURL* (_string_): URL path to the image to be animated
-*width* (_integer_): width in pixels of the image frame
-*height* (_integer_): height in pixels of the image frame
-*frames* (_integer_): number of frames in animation
-*options* (_object_): a hash of additional options
+*imageURL* ( _string_ ): URL path to the image to be animated
+*width* ( _integer_ ): width in pixels of the image frame
+*height* ( _integer_ ): height in pixels of the image frame
+*frames* ( _integer_ ): number of frames in animation
+*options* ( _object_ ): a hash of additional options
 
 h3. Options
 
-*fps* (_integer_): number of frames per second (approximately) to show. affects the speed of the animation.
-*horizontal* (_boolean_): true if your animation sprites go left to right, false if your animation sprites go top to bottom.
+*fps* ( _integer_ ): number of frames per second (approximately) to show. affects the speed of the animation.
+*horizontal* ( _boolean_ ): true if your animation sprites go left to right, false if your animation sprites go top to bottom.
