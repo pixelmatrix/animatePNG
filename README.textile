@@ -6,7 +6,7 @@ For those times when you want to use a spinner or loading animation but need it 
 
 h2. Usage
 
-$("#container").animatePNG(imageURL, width, height, frames, options);
+@$("#container").animatePNG(imageURL, width, height, frames, options);@
 
 Creates an animated div with a class of animation inside of the specified container.
 
