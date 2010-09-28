@@ -1,0 +1,30 @@
+h1. animatePNG
+
+A simple plugin to create an animation from a PNG file with frame-based sprites with jQuery.
+
+For those times when you want to use a spinner or loading animation but need it to be alpha transparent. That's just one example. The possibilities are endless.
+
+h2. Usage
+
+$("#container").animatePNG(imageURL, width, height, frames, options);
+
+Creates an animated div with a class of animation inside of the specified container.
+
+h2. Example
+
+$(function(){
+  $("#container").animatePNG("/images/animation.png", 100, 100, 8, {fps: 20, horizontal: false});
+});
+
+h2. Parameters
+
+*imageURL* (_string_): URL path to the image to be animated
+*width* (_integer_): width in pixels of the image frame
+*height* (_integer_): height in pixels of the image frame
+*frames* (_integer_): number of frames in animation
+*options* (_object_): a hash of additional options
+
+h3. Options
+
+*fps* (_integer_): number of frames per second (approximately) to show. affects the speed of the animation.
+*horizontal* (_boolean_): true if your animation sprites go left to right, false if your animation sprites go top to bottom.
