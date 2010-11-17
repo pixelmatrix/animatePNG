@@ -54,7 +54,7 @@
     
     function nextX() {
       if (animation.o.horizontal) {
-        animation.x = ((animation.x - animation.w) >= animation.imgW) ? (animation.x - animation.w) : 0;
+        animation.x = ((animation.x - animation.w) > animation.imgW) ? (animation.x - animation.w) : 0;
         return animation.x;
       } else {
         return 0;
@@ -65,7 +65,7 @@
       if (animation.o.horizontal) {
         return 0;
       } else {
-        animation.y = ((animation.y - animation.h) >= animation.imgH) ? (animation.y - animation.h) : 0;
+        animation.y = ((animation.y - animation.h) > animation.imgH) ? (animation.y - animation.h) : 0;
         return animation.y;
       }
     }
@@ -80,7 +80,7 @@
     }
     
     animation.container.css({
-      "background-color": "#eee",
+      "background-color": "transparent",
       "background-image": "url('" + animation.imageURL + "')",
       "background-position": "0px 0px",
       "background-repeat": "no-repeat",
