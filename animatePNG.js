@@ -39,6 +39,7 @@
       y: 0,
       h: h,
       w: w,
+      once: false,
       imageURL: imageURL,
       frames: frames
     };
@@ -71,7 +72,11 @@
     }
     
     function iterate() {
-      animation.container.css("background-position", nextX() + "px " + nextY() + "px");
+      if (animation.once && nextX()==0) {
+        animation.stop();
+      } else {
+        animation.container.css("background-position", nextX() + "px " + nextY() + "px");
+      }
     }
     
     function start() {
